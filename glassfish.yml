@@ -3,7 +3,7 @@
   tasks:
     - name: build image
       docker_image:
-      force: yes
+        force: yes
         name: glassfish
         path: .
         rm: yes
