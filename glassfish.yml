@@ -2,13 +2,13 @@
 - hosts: all
   tasks:
     - name: build image
-    docker_image:
-    force: yes
-    name: glassfish
-    path: .
-    rm: yes
-    state: present
-    tag: latest
+      docker_image:
+      force: yes
+      name: glassfish
+      path: .
+      rm: yes
+      state: present
+      tag: latest
   register: image_build
     - name: install glassfish
       docker_container:
