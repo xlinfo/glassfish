@@ -5,6 +5,7 @@
     docker_image:
     force: yes
     name: glassfish
+    path: .
     rm: yes
     state: present
     tag: latest
