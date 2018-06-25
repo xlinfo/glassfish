@@ -8,8 +8,6 @@
         path: .
         rm: yes
         state: present
-        tag: latest
-      register: image_build
     - name: install glassfish
       docker_container:
         name: glassfish
