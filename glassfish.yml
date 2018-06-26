@@ -8,11 +8,10 @@
         path: /
         rm: yes
         state: present
-        dest: /home/tmp/glassfish
+        path: /home/tmp/glassfish
     - name: install glassfish
       docker_container:
         name: glassfish
-        path: /home/tmp/glassfish
         image: glassfish
         ports:
           - 4848:4848
