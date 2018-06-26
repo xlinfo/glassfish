@@ -8,7 +8,6 @@
         path: /
         rm: yes
         state: present
-        path: /home/tmp/
     - name: install glassfish
       docker_container:
         name: glassfish
