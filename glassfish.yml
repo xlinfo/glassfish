@@ -5,7 +5,7 @@
       docker_image:
         force: yes
         name: glassfish
-        path: .
+        path: /
         rm: yes
         state: present
     - name: install glassfish
