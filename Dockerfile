@@ -28,7 +28,7 @@ RUN yum -y install unzip java-1.8.0-openjdk-1.8.0.151-5.b12.el7_4 java-1.8.0-ope
     rm -rf /var/cache/yum
 
 COPY docker-entrypoint.sh /entrypoint.sh
-COPY app.war /
+COPY helloworld.war $GLASSFISH_HOME/glassfish/domains/domain1/autodeploy
 ENTRYPOINT ["/entrypoint.sh"]
 
 # Ports being exposed
