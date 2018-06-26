@@ -1,17 +1,10 @@
 ---
 - hosts: all
   tasks:
-    - name: build image
-      docker_image:
-        force: yes
-        name: glassfish
-        path: /
-        rm: yes
-        state: present
     - name: install glassfish
       docker_container:
         name: glassfish
-        image: glassfish
+        image: devxlinfo/glassfish
         ports:
           - 4848:4848
           - 81:8080
